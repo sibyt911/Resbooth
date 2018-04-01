@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+		function myfunc(){
+			var a=document.getElementById("in").value;
+			var x=a%3;
+			if(x==0) 
+			{
+				var m=a/10;
+				var ans= m*2;
+				alert(ans);
+			}
+			else if(x==1) 
+			{
+				var m=a/10;
+				var ans= m*10;
+				alert(ans);
+			}
+			else
+			{
+				var m=a/10;
+				var ans = m * 8;
+				alert(ans);
+			}
+		}
+	</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="theme-color" content="#000000"><link rel="manifest" href="manifest.json">
+<link rel="shortcut icon" href="/favicon.ico"><title>Recycle Can</title>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBipGTaEpZxIOqSRoYJakq64x9BQNjZwJs"></script>
+<link href="main.02fd184f.css" rel="stylesheet">
+<style>
+	#main1
+	{
+		border:2px solid grey;
+		border-radius:5px;
+		padding:10px;
+		background-color:white;
+		width:300px;
+		height:200px;
+		position:absolute;
+		left:700px;
+		bottom:250px;
+		box-shadow:2px 2px 2px;
+		background:linear-gradient(#dddddd,#aaaaaa,#070707);
+	}
+	#in
+	{
+		margin:10px;
+		border-radius:2px;
+	}
+	#para
+	{
+		font-size:20px;
+	}
+	#submission
+	{
+		margin:10px;
+	}
+</style>
+</head>
+<body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHlW8YibL2zp7mdBSNeT81AYVaxHuOk3A&libraries=places&callback=initAutocomplete" async defer="defer"></script><noscript>You need to enable JavaScript to run this app.
+</noscript><div id="root">
+</div>
+<script type="text/javascript" src="main.e0e09c3d.js">
+</script>
+<div id="main1">
+<p id="para"><b>Enter the code on your receipt :- </b></b></p><input type="numeric" id="in" value="" placeholder="ReceiptCode" name="code"><br><br>
+<input type="submit" value="SUBMIT" name="sub" id="submission" onclick="myfunc()">
+</div>
+</body>
+</html>
